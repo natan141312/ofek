@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contacts</title>
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/OfekUnit.png" >
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="ofek.html" >Home</a>
+    <a href="Contacts.html">Contacts</a>
+     <a href="add.html" class="active">Add </a>    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <a  href="ofek.html"> <img id="logo" src="img/OfekUnit-removebg-preview.png"   alt=""></a>
+ 
+    <div class="container" id="Form" >
+        <form action="/action_page.php">
+
+<h1 id="H1ADD">Add Contact</h1>
+<div id="error_message1"></div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="firstname">First Name :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Firstname" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Lastname">Last Name :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Lastname" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Email">Email :</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="Email" >
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="age">Age :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="age" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Rank">Rank :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Rank" >
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-25">
+              <label for="ID">ID :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ID" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="PN">Personal Num:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="PN" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Role">Role :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Role" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Department">Department :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Department" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="SapirPhone"> Sapir Phone :</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="SapirPhone" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="MatcaliPhone">Matcali Phone :</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="MatcaliPhone" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Phone"> Phone number :</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="Phone" >
+            </div>
+          </div>
+
+          <div class="row">
+            <input id="Submit" type="submit" value="Submit">
+          </div>
+        </form>
+
+      </div>
+
+
+  <h1 id="add" style="color: white; text-align:center; display: none;">Your Contact Add Successfully </h1>
+
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+      <script src="js/add.js"></script>  
+
+</body>
+</html>

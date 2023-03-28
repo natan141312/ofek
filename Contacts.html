@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofek Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/OfekUnit.png" >
+    <link rel="stylesheet" href="css/Contacs.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="ofek.html">Home</a>
+       <a href="Contacts.html"  class="active">Contacts</a>
+        <a href="add.html">Add</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        
+      </div>
+
+      <a  href="ofek.html"> <img id="logo" src="img/OfekUnit-removebg-preview.png"   alt=""></a>
+
+<h1 id="h1c">Ofek 324 Contacts </h1>
+
+
+
+        <table id="table" class="center">
+          <tr id="subjects">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Rank</th>
+            <th>Age</th>
+            <th>ID</th>
+            <th>Personal Num</th>
+            <th>Role</th>
+            <th>Department</th>
+            <th>Sapir Phone</th>
+            <th>Matcali Phone</th>
+            <th>Phone</th>
+          </tr>
+        
+
+        </table>
+
+
+        <button id="Excel"onclick="ExportToExcel('xlsx')">Export Contacts to Excel</button>
+
+        <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+      <script src="js/Contacts.js"></script>  
+
+</body>
+</html>
